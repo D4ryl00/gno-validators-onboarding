@@ -277,32 +277,65 @@ Use these messages only after the process and links have been approved.
 >
 > I have assigned you the `Testnet Validator Candidate` role. Please go to `#testnet-onboarding`, read the pinned instructions, and complete the onboarding challenge. Once you submit the requested evidence, a member of the Gno team will review it and send you the next steps.
 
-### Pinned onboarding message
+### Pinned onboarding messages
 
-> **Testnet Validator onboarding**
+Post and pin both messages below in order. Replace the two link placeholders before publishing.
+
+#### Pinned message 1 of 2 — Technical challenge
+
+> **Testnet Validator Onboarding — test13 (1/2)**
 >
-> Anyone may apply to become a Testnet validator candidate. Admission to the validator set is based on the same technical and operational criteria for every candidate.
+> Anyone may apply to become a test13 validator candidate. Complete the steps below and post all requested evidence in `#testnet-onboarding`.
 >
-> **Process**
+> **1 — Set up a Gnoland node**
 >
-> 1. Ask for the `Testnet Validator Candidate` role in `[GENERAL CHANNEL]`.
-> 2. Follow the Test13 setup guide: `[README LINK]`.
-> 3. Complete the challenge below.
-> 4. Post the requested public evidence in `[SUBMISSION LOCATION]`.
-> 5. A member of the Gno team will review your submission and either approve it or explain what needs to be retried.
-> 6. Approved candidates receive the `Testnet Validator` role, complete their Valopers registration, and are progressively added to the validator set.
+> Follow the official test13 setup guide: `[TEST13 SETUP GUIDE LINK]`
 >
-> **Challenge**
+> Start the node, connect it to test13, and let it synchronize. Then share:
 >
-> - Set up and synchronize a Test13 Gnoland node.
-> - Submit: `[EXACT NON-SENSITIVE SYNC EVIDENCE]`.
-> - Complete: `[TRANSACTION INSTRUCTION]` and submit its public identifier.
-> - Register through the Valopers realm: `[VALOPERS LINK]`.
-> - Briefly describe your monitoring, upgrade, backup, and incident-response setup.
+> - Your moniker
+> - Your validator address
+> - Non-sensitive status output showing the current block height and synchronization state
 >
-> Never post seed phrases, private keys, validator signing keys, passwords, or other secrets. If you are unsure whether information is safe to share, ask before posting it.
+> **2 — Register your validator profile**
 >
-> Completing the challenge does not guarantee immediate entry into the active validator set. Approved validators begin with voting power `1`, subject to available capacity and GovDAO approval.
+> Create your profile in `r/gnops/valopers`: `[VALOPERS LINK]`
+>
+> Include your validator name, description, infrastructure type, validator address, and validator public key. Your description should also cover:
+>
+> - Networks you currently validate and your validator experience
+> - Website, social accounts, Discord handle, and preferred contact method
+> - Why you want to validate on gno.land
+> - Contributions you have made or plan to make to the ecosystem
+>
+> Share the public link to your Valoper profile in this channel.
+>
+> **3 — Introduce yourself**
+>
+> Post a short introduction covering who you are, your validator experience, and why you want to join test13.
+
+#### Pinned message 2 of 2 — Review and safety
+
+> **Testnet Validator Onboarding — test13 (2/2)**
+>
+> **Review**
+>
+> Once all challenge steps are complete, a member of the Gno team will review:
+>
+> - Node connectivity and synchronization
+> - Validator profile completeness and accuracy
+> - Basic validator-operations knowledge
+> - Participation and communication during onboarding
+>
+> Additional questions may be asked when clarification is needed. If information is missing or incorrect, you will normally be told what to fix and may submit updated evidence.
+>
+> Applications may be declined for false or misleading information, unsafe operational practices, abusive behavior, or an inability to demonstrate the basic knowledge required to operate a validator.
+>
+> If approved, you will receive the `Testnet Validator` Discord role. Entry into the active validator set remains subject to GovDAO approval and available capacity. New external validators start with voting power `1`.
+>
+> **Security**
+>
+> Never post a seed phrase, private key, validator signing key, password, private IP address, or other secret. Validator addresses and public keys are safe to share. If you are unsure whether something is safe, ask before posting it.
 
 ### Acknowledge a submission
 
