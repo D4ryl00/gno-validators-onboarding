@@ -30,8 +30,8 @@ Create a shared draft describing:
 - Instructions shown in `#testnet-onboarding`.
 - The technical challenge, potentially including:
   - Running and syncing a Gnoland node
-  - Completing a transaction
   - Registering as a valoper
+  - Providing a public RPC endpoint that remains reachable throughout the review
   - Demonstrating basic operational and troubleshooting knowledge
   - Joining a short voice call if needed
 - Objective pass/fail criteria.
@@ -40,7 +40,7 @@ Create a shared draft describing:
 - How unsuccessful candidates receive constructive feedback and may retry.
 - How approved candidates are submitted and accepted through Valopers/GovDAO.
 
-Before applications open, Rémi and LOurs must write the candidate-facing introduction and challenge instructions, get them approved, and pin the final message in `#testnet-onboarding`.
+The Valopers realm is the single source of truth for challenge instructions: https://gnoweb.test-13.gnoland.network/r/gnops/valopers. Before applications open, Rémi and LOurs must write a concise Discord introduction that links to the realm, lists the evidence to submit in `#testnet-onboarding`, requires a public RPC endpoint for the duration of the review, and explains the review process. After approval, pin it in `#testnet-onboarding`.
 
 ## 3. Finalize Discord operations
 

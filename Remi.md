@@ -1,6 +1,6 @@
 # Rémi's Validator Onboarding Tasks
 
-This document is Rémi's working checklist. Text inside blockquotes is ready to copy and paste into Discord after replacing placeholders such as `[README LINK]`.
+This document is Rémi's working checklist. Text inside blockquotes is ready to copy and paste into Discord after replacing any remaining placeholders.
 
 ## Start here
 
@@ -220,30 +220,31 @@ The following is a concrete proposal to review with LOurs, Antoine, Manfred, Mic
 4. The candidate completes the technical challenge.
 5. Rémi and LOurs review the evidence using the same criteria for every candidate.
 6. The result is `Approved` or `Needs retry`, with specific feedback.
-7. An approved candidate receives `Testnet Validator` and registers through the Valopers realm.
-8. Antoine approves the registration through GovDAO.
+7. An approved candidate receives `Testnet Validator`.
+8. Antoine approves the existing Valopers registration through GovDAO.
 9. The validator enters the active set with voting power `1`.
 
 ### Proposed technical challenge
 
-Ask the candidate to:
+Ask the candidate to follow the current instructions published in the Valopers realm. Discord should not duplicate those instructions because the realm is the source of truth.
 
-- Introduce their validator operation and provide a reliable Discord contact.
-- Set up and synchronize a Test13 Gnoland node using the official README.
-- Provide non-sensitive proof that the node is synchronized.
-- Complete the specified on-chain transaction and provide its public identifier.
-- Submit a valoper registration and provide its public link or identifier.
-- Explain briefly how they monitor the node and respond to downtime or upgrades.
+- Source of truth: https://gnoweb.test-13.gnoland.network/r/gnops/valopers
+- Complete the node setup, profile, introduction, and any other steps currently required there.
+- Share the public Valoper profile link in `#testnet-onboarding`.
+- Share a public RPC endpoint for the candidate node.
+- Keep the RPC endpoint reachable throughout the onboarding review so the team can verify connectivity and synchronization.
+- Expose only the RPC access needed for verification; do not expose private, privileged, or administrative interfaces.
 - Join a short technical call only when written evidence leaves material questions.
 
-The final challenge must specify exactly which commands and public evidence are required once the Test13 README is ready.
+If the Valopers instructions change, update the realm rather than copying the changed instructions into Discord.
 
 ### Proposed acceptance criteria
 
 A candidate is approved when all mandatory criteria are met:
 
 - [ ] Followed the published setup procedure successfully.
-- [ ] Node is running and synchronized on the correct network.
+- [ ] Public RPC endpoint is reachable throughout the review.
+- [ ] RPC responses show that the node is running and synchronized on the correct network.
 - [ ] Required transaction is valid and publicly verifiable.
 - [ ] Valoper registration is complete and accurate.
 - [ ] Demonstrated basic understanding of keys, backups, monitoring, upgrades, and incident response.
@@ -262,7 +263,7 @@ A candidate receives `Needs retry` when evidence is missing, a task is incomplet
 > 2. Ask the candidate to complete a documented technical challenge.
 > 3. Review the result against objective criteria.
 > 4. Give specific retry feedback or assign `Testnet Validator`.
-> 5. Complete Valopers registration and GovDAO approval.
+> 5. Complete the Valopers registration review and GovDAO approval.
 > 6. Add the validator with initial voting power `1`.
 >
 > Please review in particular the challenge scope, acceptance criteria, Discord flow, and public wording. Unless there are objections, we would like to finalize and pin it by `[DATE]`.
@@ -279,40 +280,34 @@ Use these messages only after the process and links have been approved.
 
 ### Pinned onboarding messages
 
-Post and pin both messages below in order. Replace the two link placeholders before publishing.
+Post and pin both messages below in order. The Valopers realm is the only source of truth for challenge instructions; Discord only explains where to find them and what evidence to submit for review.
 
 #### Pinned message 1 of 2 — Technical challenge
 
 > **Testnet Validator Onboarding — test13 (1/2)**
 >
-> Anyone may apply to become a test13 validator candidate. Complete the steps below and post all requested evidence in `#testnet-onboarding`.
+> Anyone may apply to become a test13 validator candidate.
 >
-> **1 — Set up a Gnoland node**
+> **1 — Follow the official onboarding instructions**
 >
-> Follow the official test13 setup guide: `[TEST13 SETUP GUIDE LINK]`
+> The Valopers realm is the single source of truth for the technical challenge and application requirements:
 >
-> Start the node, connect it to test13, and let it synchronize. Then share:
+> https://gnoweb.test-13.gnoland.network/r/gnops/valopers
 >
-> - Your moniker
-> - Your validator address
-> - Non-sensitive status output showing the current block height and synchronization state
+> Follow the latest instructions published there. If Discord text differs from the realm, follow the realm.
 >
-> **2 — Register your validator profile**
+> **2 — Submit your evidence in this channel**
 >
-> Create your profile in `r/gnops/valopers`: `[VALOPERS LINK]`
+> Once you have completed the realm instructions, post the following in `#testnet-onboarding`:
 >
-> Include your validator name, description, infrastructure type, validator address, and validator public key. Your description should also cover:
+> - Your moniker and validator address
+> - The public link to your Valoper profile
+> - A public RPC endpoint for the candidate node
+> - A short introduction covering who you are, your validator experience, and why you want to join test13
 >
-> - Networks you currently validate and your validator experience
-> - Website, social accounts, Discord handle, and preferred contact method
-> - Why you want to validate on gno.land
-> - Contributions you have made or plan to make to the ecosystem
+> **3 — Keep the RPC endpoint available**
 >
-> Share the public link to your Valoper profile in this channel.
->
-> **3 — Introduce yourself**
->
-> Post a short introduction covering who you are, your validator experience, and why you want to join test13.
+> The RPC endpoint must remain reachable for the entire onboarding review. It will be used to verify node connectivity, network identity, block height, and synchronization state. Expose only the RPC access required for verification—never expose a private, privileged, or administrative interface.
 
 #### Pinned message 2 of 2 — Review and safety
 
@@ -322,7 +317,8 @@ Post and pin both messages below in order. Replace the two link placeholders bef
 >
 > Once all challenge steps are complete, a member of the Gno team will review:
 >
-> - Node connectivity and synchronization
+> - RPC endpoint availability
+> - Node connectivity, test13 network identity, and synchronization through the RPC endpoint
 > - Validator profile completeness and accuracy
 > - Basic validator-operations knowledge
 > - Participation and communication during onboarding
@@ -335,7 +331,7 @@ Post and pin both messages below in order. Replace the two link placeholders bef
 >
 > **Security**
 >
-> Never post a seed phrase, private key, validator signing key, password, private IP address, or other secret. Validator addresses and public keys are safe to share. If you are unsure whether something is safe, ask before posting it.
+> Never post a seed phrase, private key, validator signing key, password, private IP address, or other secret. Validator addresses, validator public keys, public Valoper links, and secured public RPC endpoints are safe to share. If you are unsure whether something is safe, ask before posting it.
 
 ### Acknowledge a submission
 
@@ -356,9 +352,8 @@ Post and pin both messages below in order. Replace the two link placeholders bef
 >
 > Next steps:
 >
-> 1. Confirm that your Valopers registration is complete: `[VALOPERS LINK]`.
-> 2. Send us the public registration link or identifier.
-> 3. Wait for GovDAO approval and confirmation before considering your validator active.
+> 1. Keep your candidate node and RPC endpoint available.
+> 2. Wait for GovDAO approval and confirmation before considering your validator active.
 >
 > New external validators start with voting power `1` and may receive more voting power later under a separate, documented process.
 
