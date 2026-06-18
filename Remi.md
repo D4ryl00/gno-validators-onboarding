@@ -94,7 +94,6 @@ Severity: blocking / confusing / minor
 
 - [ ] Review the shared flow in `Shared.md` with LOurs.
 - [ ] Confirm that the Valopers realm remains the single source of truth for challenge instructions.
-- [ ] Confirm the RPC availability requirement.
 - [ ] Confirm the acceptance and retry criteria.
 - [ ] Send the private team-review template below.
 - [ ] Apply approved feedback to the shared process and Discord messages.
@@ -227,7 +226,7 @@ Remove any unverified item from "Confirmed working" before sending.
 > 5. Complete the Valopers registration review and GovDAO approval.
 > 6. Add the validator with initial voting power `1`.
 >
-> Please review the criteria, Discord flow, RPC requirement, and public wording. Unless there are objections, we would like to finalize and pin it by `[DATE]`.
+> Please review the criteria, Discord flow, and public wording. Unless there are objections, we would like to finalize and pin it by `[DATE]`.
 
 ### Existing-validator audit decision
 

@@ -26,9 +26,6 @@ Candidates must:
 
 - Complete the node setup, profile, introduction, and any other steps currently required in the realm.
 - Share the public Valoper profile link in `#testnet-onboarding`.
-- Share a public RPC endpoint for the candidate node.
-- Keep the RPC endpoint reachable throughout the review so the team can verify connectivity and synchronization.
-- Expose only RPC access needed for verification, never private, privileged, or administrative interfaces.
 - Join a short technical call only when written evidence leaves material questions.
 
 If challenge instructions change, update the realm rather than copying detailed instructions into Discord.
@@ -38,8 +35,7 @@ If challenge instructions change, update the realm rather than copying detailed 
 A candidate is approved when all mandatory criteria are met:
 
 - [ ] Followed the published setup procedure successfully.
-- [ ] Public RPC endpoint remained reachable throughout the review.
-- [ ] RPC responses show that the node is running and synchronized on test13.
+- [ ] Submitted the required evidence that the node is running and synchronized on test13.
 - [ ] Required transaction is valid and publicly verifiable.
 - [ ] Valoper registration is complete and accurate.
 - [ ] Demonstrated basic understanding of keys, backups, monitoring, upgrades, and incident response.
@@ -105,12 +101,7 @@ A candidate receives `Needs retry` when evidence is missing, a task is incomplet
 >
 > - Your moniker and validator address
 > - The public link to your Valoper profile
-> - A public RPC endpoint for the candidate node
 > - A short introduction covering who you are, your validator experience, and why you want to join test13
->
-> **3 — Keep the RPC endpoint available**
->
-> The RPC endpoint must remain reachable for the entire onboarding review. It will be used to verify node connectivity, network identity, block height, and synchronization state. Expose only the RPC access required for verification—never expose a private, privileged, or administrative interface.
 
 ### Pinned message 2 of 2 — Review and safety
 
@@ -120,8 +111,7 @@ A candidate receives `Needs retry` when evidence is missing, a task is incomplet
 >
 > Once all challenge steps are complete, a member of the Gno team will review:
 >
-> - RPC endpoint availability
-> - Node connectivity, test13 network identity, and synchronization through the RPC endpoint
+> - Evidence that the node is connected to test13 and synchronized
 > - Validator profile completeness and accuracy
 > - Basic validator-operations knowledge
 > - Participation and communication during onboarding
@@ -134,7 +124,7 @@ A candidate receives `Needs retry` when evidence is missing, a task is incomplet
 >
 > **Security**
 >
-> Never post a seed phrase, private key, validator signing key, password, private IP address, or other secret. Validator addresses, validator public keys, public Valoper links, and secured public RPC endpoints are safe to share. If you are unsure whether something is safe, ask before posting it.
+> Never post a seed phrase, private key, validator signing key, password, private IP address, or other secret. Validator addresses, validator public keys, and public Valoper links are safe to share. If you are unsure whether something is safe, ask before posting it.
 
 ### Acknowledge a submission
 
@@ -155,8 +145,7 @@ A candidate receives `Needs retry` when evidence is missing, a task is incomplet
 >
 > Next steps:
 >
-> 1. Keep your candidate node and RPC endpoint available.
-> 2. Wait for GovDAO approval and confirmation before considering your validator active.
+> 1. Wait for GovDAO approval and confirmation before considering your validator active.
 >
 > New external validators start with voting power `1` and may receive more voting power later under a separate, documented process.
 
@@ -177,9 +166,9 @@ A candidate receives `Needs retry` when evidence is missing, a task is incomplet
 
 Do not store secrets or unnecessary personal information.
 
-| Candidate | Discord | Status | Challenge submitted | Reviewers | Missing criteria | Decision date | Valoper link | RPC endpoint | GovDAO status |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Example | @example | Challenge in progress | YYYY-MM-DD | Team | RPC unavailable | — | — | — | — |
+| Candidate | Discord | Status | Challenge submitted | Reviewers | Missing criteria | Decision date | Valoper link | GovDAO status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Example | @example | Challenge in progress | YYYY-MM-DD | Team | Sync evidence | — | — | — |
 
 Allowed statuses:
 
