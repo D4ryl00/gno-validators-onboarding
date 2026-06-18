@@ -18,17 +18,18 @@ This document contains material intended to be shared with team members, existin
 
 ### Challenge requirements
 
-The Valopers realm is the single source of truth for challenge instructions:
+The Valopers realm is the single source of truth for application requirements:
 
 https://gnoweb.test-13.gnoland.network/r/gnops/valopers
 
 Candidates must:
 
-- Complete the node setup, profile, introduction, and any other steps currently required in the realm.
+- Set up their node by following the official Test13 README: https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/README.md
+- Complete the profile, introduction, and any other application steps currently required in the Valopers realm.
 - Share the public Valoper profile link in `#testnet-onboarding`.
 - Join a short technical call only when written evidence leaves material questions.
 
-If challenge instructions change, update the realm rather than copying detailed instructions into Discord.
+If application requirements change, update the realm rather than copying detailed instructions into Discord. Keep technical node-setup instructions in the official Test13 README.
 
 ### Acceptance criteria
 
@@ -87,17 +88,23 @@ A candidate receives `Needs retry` when evidence is missing, a task is incomplet
 >
 > Anyone may apply to become a test13 validator candidate.
 >
-> **1 — Follow the official onboarding instructions**
+> **1 — Set up your test13 node**
 >
-> The Valopers realm is the single source of truth for the technical challenge and application requirements:
+> Follow the official Test13 README:
+>
+> https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/README.md
+>
+> **2 — Complete your validator application**
+>
+> Follow the current requirements in the Valopers realm:
 >
 > https://gnoweb.test-13.gnoland.network/r/gnops/valopers
 >
-> Follow the latest instructions published there. If Discord text differs from the realm, follow the realm.
+> The README is the reference for node setup. The Valopers realm is the reference for application requirements.
 >
-> **2 — Submit your evidence in this channel**
+> **3 — Submit your evidence in this channel**
 >
-> Once you have completed the realm instructions, post the following in `#testnet-onboarding`:
+> Once you have completed the node setup and the Valopers application requirements, post the following in `#testnet-onboarding`:
 >
 > - Your moniker and validator address
 > - The public link to your Valoper profile

@@ -17,6 +17,8 @@
 - Antoine updates the README based on their feedback.
 - Publish the validated final version.
 
+Official Test13 node setup instructions: https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/README.md
+
 ## 2. Define the candidate onboarding process
 
 **Owners:** Rémi, LOurs  
@@ -39,7 +41,7 @@ Create a shared draft describing:
 - How unsuccessful candidates receive constructive feedback and may retry.
 - How approved candidates are submitted and accepted through Valopers/GovDAO.
 
-The Valopers realm is the single source of truth for challenge instructions: https://gnoweb.test-13.gnoland.network/r/gnops/valopers. Before applications open, Rémi and LOurs must write a concise Discord introduction that links to the realm, lists the evidence to submit in `#testnet-onboarding`, and explains the review process. After approval, pin it in `#testnet-onboarding`.
+The Valopers realm is the single source of truth for application requirements: https://gnoweb.test-13.gnoland.network/r/gnops/valopers. Candidates must use the official Test13 README for node setup: https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/README.md. Before applications open, Rémi and LOurs must write a concise Discord introduction that links to both sources, lists the evidence to submit in `#testnet-onboarding`, and explains the review process. After approval, pin it in `#testnet-onboarding`.
 
 ## 3. Finalize Discord operations
 

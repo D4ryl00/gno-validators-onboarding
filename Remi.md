@@ -59,6 +59,8 @@ Test without changing access for real validators unless the change has already b
 
 Run the documented process exactly as written. Do not silently fix commands: record the problem first, then test the correction separately.
 
+README to test: https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/README.md
+
 ### Test checklist
 
 - [ ] Start from a clean machine, VM, container, or empty data directory.
@@ -93,7 +95,8 @@ Severity: blocking / confusing / minor
 ## 4. Finalize the onboarding process
 
 - [ ] Review the shared flow in `Shared.md` with LOurs.
-- [ ] Confirm that the Valopers realm remains the single source of truth for challenge instructions.
+- [ ] Confirm that the Valopers realm remains the source of truth for application requirements.
+- [ ] Confirm that candidates are directed to the official Test13 README for node setup.
 - [ ] Confirm the acceptance and retry criteria.
 - [ ] Send the private team-review template below.
 - [ ] Apply approved feedback to the shared process and Discord messages.
