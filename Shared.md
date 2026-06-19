@@ -34,7 +34,9 @@ Requirements change in the realm, not in Discord. Node setup stays in the README
 
 ### Acceptance criteria
 
-Approve when all are met:
+#### Approve
+
+All criteria met:
 
 - [ ] Followed the published setup successfully.
 - [ ] Submitted evidence the node is connected to test13 and synced.
@@ -45,9 +47,11 @@ Approve when all are met:
 - [ ] Communicates clearly enough to coordinate operations.
 - [ ] Never exposed a secret or mishandled a key.
 
-Otherwise mark `Needs retry`. In the feedback, name the failed criterion and the
-next action. Base every decision on the published criteria alone, never on
-reputation or undocumented rules.
+#### Needs retry
+
+Any criterion unmet. In the feedback, name the failed criterion and the next
+action. Base every decision on the published criteria alone, never on reputation
+or undocumented rules.
 
 Example feedback: `Sync evidence missing: node not shown at the current block
 height. Post your node's block-height query output, then resubmit.`
