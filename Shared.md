@@ -20,7 +20,7 @@ bracketed placeholder before sending.
 ### Requirements
 
 The Valopers realm is the single source of truth:
-https://gnoweb.test-13.gnoland.network/r/gnops/valopers
+https://test13.testnets.gno.land/r/gnops/valopers
 
 Candidates must:
 
