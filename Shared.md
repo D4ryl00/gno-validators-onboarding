@@ -130,6 +130,9 @@ validator address.`
 > Follow the current Valopers realm requirements:
 > https://test13.testnets.gno.land/r/gnops/valopers
 >
+> For additional guidance on steps 1 and 2, see:
+> https://gnops.io/
+>
 > **3. Submit your evidence with the Discord bot**
 >
 > Once the node and application are ready, run `/submit-request` in
