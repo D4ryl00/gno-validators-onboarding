@@ -82,10 +82,10 @@ Remaining checks:
 
 Document the operational sequence:
 
-1. Candidate registers through the Valopers Realm.
-2. Candidiate shares registration link in Discord.
-3. Candidate receives the Discord tesnet candidate role.
-4. Candidate completes the onboarding challenge.
+1. Candidate requests access to Discord.
+2. Candidate receives the Discord tesnet candidate role.
+3. Candidate completes the onboarding challenge (setup node, register through the Valopers Realm...).
+4. Candidate shares registration link in Discord.
 5. Rémi and LOurs approve or reject the candidate.
 6. Candidate is submitted to the GovDAO for a vote. 
 7. Approved candidate receives the testnet validator role.
