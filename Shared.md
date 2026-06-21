@@ -1,49 +1,65 @@
 # Shared Validator Onboarding Material
 
-This document contains material intended to be shared with team members, existing validators, or candidates. Replace bracketed placeholders before sending a message.
+Material to share with team members, validators, and candidates. Replace every
+bracketed placeholder before sending.
 
-## Shared onboarding process
+## Onboarding process
 
 ### Flow
 
-1. A person asks to join in the general Discord channel.
-2. A team member assigns `Testnet Validator Candidate`.
-3. The candidate reads the pinned instructions in `#testnet-onboarding`.
-4. The candidate follows the current instructions in the Valopers realm and submits the requested evidence.
-5. The team reviews the evidence using the published criteria.
-6. The result is `Approved` or `Needs retry`, with specific feedback.
-7. An approved candidate receives `Testnet Validator`.
-8. The existing Valopers registration is approved through GovDAO.
-9. The validator enters the active set with voting power `1`.
+1. In `┋💬ㆍgeneral-chat`, someone runs `/candidate-testnet`.
+2. The bot assigns `Testnet Validator Candidate` and grants access to
+   `#testnet-onboarding`.
+3. They read the pinned instructions and follow the Valopers realm requirements.
+4. In `#testnet-onboarding`, they run `/submit-request` and provide only their
+   validator address.
+5. The team reviews against the published criteria.
+6. Result: `Approved` or `Needs retry`, with specific feedback.
+7. Approved candidates get `Testnet Validator`.
+8. GovDAO approves the Valopers registration.
+9. The validator joins the active set with voting power `1`.
 
-### Challenge requirements
+### Requirements
 
-The Valopers realm is the single source of truth for application requirements:
-
-https://gnoweb.test-13.gnoland.network/r/gnops/valopers
+The Valopers realm is the single source of truth:
+https://test13.testnets.gno.land/r/gnops/valopers
 
 Candidates must:
 
-- Set up their node by following the official Test13 README: https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/README.md
-- Complete the profile, introduction, and any other application steps currently required in the Valopers realm.
-- Share the public Valoper profile link in `#testnet-onboarding`.
-- Join a short technical call only when written evidence leaves material questions.
+- Set up a node per the Test13 guide:
+  https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/VALIDATOR.md
+- Complete every application step the Valopers realm currently requires.
+- In `#testnet-onboarding`, run `/submit-request` and provide only the validator
+  address.
+- Join a short call only if the submitted address leaves open questions.
 
-If application requirements change, update the realm rather than copying detailed instructions into Discord. Keep technical node-setup instructions in the official Test13 README.
+Requirements change in the realm, not in Discord. Node setup stays in the guide.
 
 ### Acceptance criteria
 
-A candidate is approved when all mandatory criteria are met:
+#### Approve
 
-- [ ] Followed the published setup procedure successfully.
-- [ ] Submitted the required evidence that the node is running and synchronized on test13.
+All criteria met:
+
+- [ ] Followed the published setup successfully.
+- [ ] Submitted the validator address with `/submit-request`.
+- [ ] The submitted address identifies a validator connected to test13 and synced.
 - [ ] Required transaction is valid and publicly verifiable.
 - [ ] Valoper registration is complete and accurate.
-- [ ] Demonstrated basic understanding of keys, backups, monitoring, upgrades, and incident response.
-- [ ] Communicated clearly enough for operational coordination.
-- [ ] Did not expose secrets or demonstrate unsafe key handling.
+- [ ] Shows basic grasp of keys, backups, monitoring, upgrades, and incident
+      response.
+- [ ] Communicates clearly enough to coordinate operations.
+- [ ] Never exposed a secret or mishandled a key.
 
-A candidate receives `Needs retry` when evidence is missing, a task is incomplete, or a safety or operational issue must be corrected. Feedback must identify the failed criterion and required next action. Decisions should not rely on reputation or undocumented criteria.
+#### Needs retry
+
+Any criterion unmet. In the feedback, name the failed criterion and the next
+action. Base every decision on the published criteria alone, never on reputation
+or undocumented rules.
+
+Example feedback: `The validator at the submitted address is not synced to the
+current test13 height. Fix the node, then run /submit-request again with the
+validator address.`
 
 ## Existing-validator messages
 
@@ -51,139 +67,169 @@ A candidate receives `Needs retry` when evidence is missing, a task is incomplet
 
 > **Update to the Testnet Validator onboarding process**
 >
-> We are introducing a consistent onboarding process for all external Testnet validators before opening new applications.
+> We are introducing one onboarding process for all external Testnet validators
+> before we open new applications. The requirements are the pinned instructions
+> in `#testnet-onboarding` and the Valopers realm.
 >
-> As part of this change, the `Testnet Validator` role will be removed from some current members on `[DATE AND TIME WITH TIME ZONE]`. This is an administrative reset, not a ban or a negative judgment about anyone's previous contribution.
+> Thank you to everyone who has validated on the testnet so far. On
+> July 22, 2026, we will remove the `Testnet Validator` Discord
+> role. We remove it so every external validator is
+> onboarded through the same documented criteria, with one clear and fair path
+> into the validator set. This is an administrative reset, not a ban or a judgment
+> on your past work. To get the role back, re-apply through the steps below.
 >
-> The goal is to apply the same documented technical and operational criteria to external validators and make the path into the validator set clear to everyone.
+> 1. In `┋💬ㆍgeneral-chat`, run `/candidate-testnet`.
+> 2. The bot assigns `Testnet Validator Candidate` and grants access to
+>    `#testnet-onboarding`.
+> 3. Read the pinned instructions and complete the steps.
+> 4. In `#testnet-onboarding`, run `/submit-request` and provide only your
+>    validator address.
+> 5. The Gno team reviews and either assigns `Testnet Validator` or tells you what
+>    remains.
 >
-> If your role is removed and you want to apply for the new validator set:
+> Security rules: `[SECURITY PIN]`
 >
-> 1. Ask for the `Testnet Validator Candidate` role in `[GENERAL CHANNEL]`.
-> 2. Once the role is assigned, read the pinned instructions in `#testnet-onboarding`: `[MESSAGE OR CHANNEL LINK]`.
-> 3. Complete the requested steps, or send evidence of equivalent work you have already completed.
-> 4. A member of the Gno team will review the evidence and either assign the `Testnet Validator` role or explain what remains to be completed.
->
-> Please do not share seed phrases, private keys, validator signing keys, passwords, or other secrets as evidence.
->
-> If you request the Candidate role but cannot access `#testnet-onboarding`, ask a member of the Gno team for help in `[GENERAL CHANNEL]`.
+> If the bot command or channel access does not work, ask the Gno team in
+> `┋💬ㆍgeneral-chat`.
 
 ### Short notification after removing a role
 
-> Hi `[NAME]`, your previous `Testnet Validator` role has now been removed as part of the onboarding-process reset announced here: `[ANNOUNCEMENT LINK]`.
+> Hi `[NAME]`, thanks for validating on the testnet so far. Your
+> `Testnet Validator` role was removed as part of the onboarding reset announced
+> here: `[ANNOUNCEMENT LINK]`.
 >
-> If you want to apply for the new validator set, please ask for the `Testnet Validator Candidate` role in `[GENERAL CHANNEL]`. Once assigned, you will receive access to `#testnet-onboarding`. If you already completed equivalent technical steps, you may submit the existing public evidence instead of repeating unnecessary work.
+> To apply for the new set, run `/candidate-testnet`
+> in `┋💬ㆍgeneral-chat`. The bot will assign the Candidate role and grant access
+> to `#testnet-onboarding`, where `/submit-request` accepts only your validator
+> address.
 
 ## Candidate-facing Discord messages
 
-### Reply to someone asking to become a validator
+### Bot reply after `/candidate-testnet`
 
-> Welcome! Anyone can apply to become a Testnet validator candidate.
+> Welcome! The `Testnet Validator Candidate` role has been assigned.
 >
-> I have assigned you the `Testnet Validator Candidate` role. Please go to `#testnet-onboarding`, read the pinned instructions, and complete the onboarding challenge. Once you submit the requested evidence, a member of the Gno team will review it and send you the next steps.
+> You now have access to `#testnet-onboarding`. Read the pinned instructions and
+> complete the challenge. Once the node and application are ready, run
+> `/submit-request` in `#testnet-onboarding` and provide only the validator
+> address.
 
-### Pinned message 1 of 2 — Technical challenge
+### Pinned message 1 of 3: Technical challenge
 
-> **Testnet Validator Onboarding — test13 (1/2)**
+> **Testnet Validator Onboarding: test13 (1/3)**
 >
-> Anyone may apply to become a test13 validator candidate.
+> Anyone can apply to be a test13 validator candidate.
 >
-> **1 — Set up your test13 node**
+> **1. Set up your test13 node**
 >
-> Follow the official Test13 README:
+> Follow the Test13 guide:
+> https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/VALIDATOR.md
 >
-> https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/README.md
+> **2. Complete your validator application**
 >
-> **2 — Complete your validator application**
+> Follow the current Valopers realm requirements:
+> https://test13.testnets.gno.land/r/gnops/valopers
 >
-> Follow the current requirements in the Valopers realm:
+> For additional guidance on steps 1 and 2, see:
+> https://gnops.io/
 >
-> https://gnoweb.test-13.gnoland.network/r/gnops/valopers
+> **3. Submit your evidence with the Discord bot**
 >
-> The README is the reference for node setup. The Valopers realm is the reference for application requirements.
->
-> **3 — Submit your evidence in this channel**
->
-> Once you have completed the node setup and the Valopers application requirements, post the following in `#testnet-onboarding`:
->
-> - Your moniker and validator address
-> - The public link to your Valoper profile
-> - A short introduction covering who you are, your validator experience, and why you want to join test13
+> Once the node and application are ready, run `/submit-request` in
+> `#testnet-onboarding`. Provide only your validator address. The Gno team uses
+> that address to review the validator and its Valoper application.
 
-### Pinned message 2 of 2 — Review and safety
+### Pinned message 2 of 3: Review
 
-> **Testnet Validator Onboarding — test13 (2/2)**
+> **Testnet Validator Onboarding: test13 (2/3)**
 >
 > **Review**
 >
-> Once all challenge steps are complete, a member of the Gno team will review:
+> Once `/submit-request` is complete, the Gno team uses the submitted validator
+> address to review:
 >
-> - Evidence that the node is connected to test13 and synchronized
+> - Connection to test13 and synchronization
 > - Validator profile completeness and accuracy
 > - Basic validator-operations knowledge
 > - Participation and communication during onboarding
 >
-> Additional questions may be asked when clarification is needed. If information is missing or incorrect, you will normally be told what to fix and may submit updated evidence.
+> We may ask follow-up questions. If something is missing or wrong, we tell you
+> what to fix and you resubmit.
 >
-> Applications may be declined for false or misleading information, unsafe operational practices, abusive behavior, or an inability to demonstrate the basic knowledge required to operate a validator.
+> We decline applications for false or misleading information, unsafe operations,
+> abusive behavior, or failure to show the basic knowledge a validator needs.
 >
-> If approved, you will receive the `Testnet Validator` Discord role. Entry into the active validator set remains subject to GovDAO approval and available capacity. New external validators start with voting power `1`.
+> If approved, you get the `Testnet Validator` Discord role. Joining the active
+> set still needs GovDAO approval and free capacity. New external validators start
+> with voting power `1`.
+
+### Pinned message 3 of 3: Security
+
+> **Testnet Validator Onboarding: test13 (3/3)**
 >
-> **Security**
->
-> Never post a seed phrase, private key, validator signing key, password, private IP address, or other secret. Validator addresses, validator public keys, and public Valoper links are safe to share. If you are unsure whether something is safe, ask before posting it.
+> Never share seed phrases, private keys, validator signing keys, passwords,
+> private IP addresses, or other secrets. Validator addresses, validator public
+> keys, and public Valoper links are safe to share. Unsure? Ask before posting.
+
+Other messages link here as `[SECURITY PIN]`.
 
 ### Acknowledge a submission
 
-> Thanks, we received your validator onboarding submission. A member of the Gno team will review it against the published criteria and reply by `[DATE OR TIMEFRAME]`. Please do not send any private key or seed phrase during the review.
+> Thanks, we received the validator address submitted with `/submit-request`.
+> The Gno team will review it against the published criteria and reply by
+> `[DATE OR TIMEFRAME]`.
 
 ### Request missing information
 
-> Thanks for the submission. Before we can complete the review, please provide or correct the following:
+> Thanks. Before we can finish the review, please correct:
 >
 > - `[MISSING OR INVALID ITEM]`
 > - `[MISSING OR INVALID ITEM]`
 >
-> Please reply with the updated public evidence. Do not share private keys, seed phrases, or validator signing keys.
+> After fixing it, run `/submit-request` again and provide only the validator
+> address. Security rules: `[SECURITY PIN]`
 
 ### Approve a candidate
 
-> Your onboarding challenge has been approved. We have assigned you the `Testnet Validator` role.
+> Congratulations, you passed the onboarding challenge. We assigned you the
+> `Testnet Validator` role.
 >
-> Next steps:
->
-> 1. Wait for GovDAO approval and confirmation before considering your validator active.
->
-> New external validators start with voting power `1` and may receive more voting power later under a separate, documented process.
+> Next: wait for GovDAO approval and confirmation before treating your validator
+> as active. New external validators start with voting power `1` and may earn more
+> later through a separate, documented process.
 
-### Ask a candidate to retry
+### Decline a candidate and explain how to reapply
 
-> Thanks for completing the onboarding challenge. We cannot approve it yet because the following published criteria are not complete:
+> Thanks for completing the challenge. We cannot approve this application because
+> the following published criteria are not met:
 >
 > - `[CRITERION]: [OBSERVED ISSUE]`
 > - `[CRITERION]: [OBSERVED ISSUE]`
 >
-> To retry, please `[SPECIFIC ACTIONS]` and submit the updated evidence here. You are welcome to ask technical questions if any instruction is unclear.
+> The `Testnet Validator Candidate` role will now be removed.
+>
+> To apply again, restart the process from the beginning: run
+> `/candidate-testnet` in `┋💬ㆍgeneral-chat`, complete every pinned onboarding
+> step, then run `/submit-request` with only the validator address. The new
+> application will be reviewed independently.
 
 ### Escalate an unclear result to a technical call
 
-> Thanks for the submission. Most of the challenge is complete, but we need to clarify `[TOPIC]` before making a decision. Could you join a short technical call at one of these times: `[OPTIONS]`? The call will focus on `[SCOPE]`.
+> Thanks for the submission. Before we decide, we need to clarify `[TOPIC]`. Can
+> you join a short technical call at one of these times: `[OPTIONS]`? It will
+> focus on `[SCOPE]`.
 
 ## Shared candidate tracker
 
-Do not store secrets or unnecessary personal information.
+No secrets, no unnecessary personal information.
 
 | Candidate | Discord | Status | Challenge submitted | Reviewers | Missing criteria | Decision date | Valoper link | GovDAO status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Example | @example | Challenge in progress | YYYY-MM-DD | Team | Sync evidence | — | — | — |
+| Example | @example | Challenge in progress | YYYY-MM-DD | Team | Sync evidence | - | - | - |
 
-Allowed statuses:
+Allowed statuses: `Candidate`, `Challenge in progress`, `Needs retry`,
+`Approved`, `GovDAO pending`, `Added to valset`.
 
-- `Candidate`
-- `Challenge in progress`
-- `Needs retry`
-- `Approved`
-- `GovDAO pending`
-- `Added to valset`
-
-For every `Needs retry` or `Approved` result, record which published criteria were evaluated. Two reviewers should agree before assigning the validator role; escalate disagreements to Antoine.
+For every `Needs retry` or `Approved`, record which published criteria were
+evaluated. Two reviewers must agree before assigning the role. Escalate
+disagreements to Antoine.
