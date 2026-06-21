@@ -41,7 +41,7 @@ Create a shared draft describing:
 - How unsuccessful candidates receive constructive feedback and may retry.
 - How approved candidates are submitted and accepted through Valopers/GovDAO.
 
-The Valopers realm is the single source of truth for application requirements: https://gnoweb.test-13.gnoland.network/r/gnops/valopers. Candidates must use the official Test13 README for node setup: https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/README.md. Before applications open, Rémi and LOurs must write a concise Discord introduction that links to both sources, lists the evidence to submit in `#testnet-onboarding`, and explains the review process. After approval, pin it in `#testnet-onboarding`.
+The Valopers realm is the single source of truth for application requirements: https://test13.testnets.gno.land/r/gnops/valopers. Candidates must use the official Test13 README for node setup: https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/README.md. Before applications open, Rémi and LOurs must write a concise Discord introduction that links to both sources, lists the evidence to submit in `#testnet-onboarding`, and explains the review process. After approval, pin it in `#testnet-onboarding`.
 
 ## 3. Finalize Discord operations
 
@@ -82,14 +82,14 @@ Remaining checks:
 
 Document the operational sequence:
 
-1. Candidate requests access.
-2. Candidate receives the Discord candidate role.
-3. Candidate completes the onboarding challenge.
-4. Rémi and LOurs approve or reject the candidate.
-5. Approved candidate receives the validator role.
-6. Candidate registers through the Valopers realm.
-7. Registration is accepted through GovDAO; currently Antoine can execute approval directly.
-8. Validator enters the active set with voting power `1`.
+1. Candidate requests access to Discord.
+2. Candidate receives the Discord tesnet candidate role.
+3. Candidate completes the onboarding challenge (setup node, register through the Valopers Realm...).
+4. Candidate shares registration link in Discord.
+5. Rémi and LOurs approve or reject the candidate.
+6. Candidate is submitted to the GovDAO for a vote. 
+7. Approved candidate receives the testnet validator role.
+9. Validator enters the active set with voting power `1`.
 
 The criteria must remain welcoming and transparent while filtering validators based on clear technical and operational requirements.
 
