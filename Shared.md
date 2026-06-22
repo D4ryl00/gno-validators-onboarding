@@ -65,30 +65,36 @@ operator address.`
 
 ### Announcement before changing roles
 
-> **Update to the Testnet Validator onboarding process**
+> **Update to the Testnet Validator Onboarding Process**
 >
-> We are introducing one onboarding process for all external Testnet validators
-> before we open new applications. The requirements are the pinned instructions
-> in `#testnet-onboarding` and the Valopers realm.
+> Hi Validators,
 >
-> Thank you to everyone who has validated on the testnet so far. On
-> June 22, 2026, we will remove the `Testnet Validator` Discord
-> role. We remove it so every external validator is
-> onboarded through the same documented criteria, with one clear and fair path
-> into the validator set. This is an administrative reset, not a ban or a judgment
-> on your past work. To get the role back, re-apply through the steps below.
+> We are pleased to announce that we will be streamlining our validator
+> onboarding process. Before we accept new applications, we are introducing a
+> single, standardized onboarding path for all external Testnet validators. The
+> full requirements can be found in the pinned instructions in
+> `#testnet-onboarding` and the Valopers realm.
+>
+> We appreciate everyone who has validated on our testnet. On June 22, 2026, we
+> will be removing the `Testnet Validator` Discord role from all current holders.
+> This is an administrative reset, not a ban or a reflection of your past
+> contributions. The goal is to ensure every external validator enters the set
+> through the same documented criteria, with one clear and fair path forward. To
+> get your role back, simply re-apply using the steps below.
+>
+> **How to Re-Apply**
 >
 > 1. In `┋💬ㆍgeneral-chat`, run `/candidate-testnet`.
-> 2. The bot assigns `Testnet Validator Candidate` and grants access to
->    `#testnet-onboarding`.
-> 3. Read the pinned instructions and complete the steps.
-> 4. In `#testnet-onboarding`, run `/submit-request` and provide only your
->    operator address.
-> 5. The Gno team reviews and either assigns `Testnet Validator` or tells you what
->    remains.
+> 2. The bot will assign you the `Testnet Validator Candidate` role and grant
+>    access to `#testnet-onboarding`.
+> 3. Read the pinned instructions and complete all required steps.
+> 4. In `#testnet-onboarding`, run `/submit-request` and provide your operator
+>    address.
+> 5. The Gno team will review your submission and either assign you the
+>    `Testnet Validator` role or let you know what still needs to be completed.
 >
-> If the bot command or channel access does not work, ask the Gno team in
-> `┋💬ㆍgeneral-chat`.
+> If you run into any issues with the bot command or channel access, reach out to
+> the Gno team in `┋💬ㆍgeneral-chat`.
 
 ### Short notification after removing a role
 
