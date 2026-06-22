@@ -12,7 +12,7 @@ bracketed placeholder before sending.
    `#testnet-onboarding`.
 3. They read the pinned instructions and follow the Valopers realm requirements.
 4. In `#testnet-onboarding`, they run `/submit-request` and provide only their
-   validator address.
+   operator address.
 5. The team reviews against the published criteria.
 6. Result: `Approved` or `Needs retry`, with specific feedback.
 7. Approved candidates get `Testnet Validator`.
@@ -29,7 +29,7 @@ Candidates must:
 - Set up a node per the Test13 guide:
   https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/VALIDATOR.md
 - Complete every application step the Valopers realm currently requires.
-- In `#testnet-onboarding`, run `/submit-request` and provide only the validator
+- In `#testnet-onboarding`, run `/submit-request` and provide only the operator
   address.
 - Join a short call only if the submitted address leaves open questions.
 
@@ -42,7 +42,7 @@ Requirements change in the realm, not in Discord. Node setup stays in the guide.
 All criteria met:
 
 - [ ] Followed the published setup successfully.
-- [ ] Submitted the validator address with `/submit-request`.
+- [ ] Submitted the operator address with `/submit-request`.
 - [ ] The submitted address identifies a validator connected to test13 and synced.
 - [ ] Required transaction is valid and publicly verifiable.
 - [ ] Valoper registration is complete and accurate.
@@ -59,7 +59,7 @@ or undocumented rules.
 
 Example feedback: `The validator at the submitted address is not synced to the
 current test13 height. Fix the node, then run /submit-request again with the
-validator address.`
+operator address.`
 
 ## Existing-validator messages
 
@@ -83,11 +83,9 @@ validator address.`
 >    `#testnet-onboarding`.
 > 3. Read the pinned instructions and complete the steps.
 > 4. In `#testnet-onboarding`, run `/submit-request` and provide only your
->    validator address.
+>    operator address.
 > 5. The Gno team reviews and either assigns `Testnet Validator` or tells you what
 >    remains.
->
-> Security rules: `[SECURITY PIN]`
 >
 > If the bot command or channel access does not work, ask the Gno team in
 > `┋💬ㆍgeneral-chat`.
@@ -100,7 +98,7 @@ validator address.`
 >
 > To apply for the new set, run `/candidate-testnet`
 > in `┋💬ㆍgeneral-chat`. The bot will assign the Candidate role and grant access
-> to `#testnet-onboarding`, where `/submit-request` accepts only your validator
+> to `#testnet-onboarding`, where `/submit-request` accepts only your operator
 > address.
 
 ## Candidate-facing Discord messages
@@ -111,7 +109,7 @@ validator address.`
 >
 > You now have access to `#testnet-onboarding`. Read the pinned instructions and
 > complete the challenge. Once the node and application are ready, run
-> `/submit-request` in `#testnet-onboarding` and provide only the validator
+> `/submit-request` in `#testnet-onboarding` and provide only the operator
 > address.
 
 ### Pinned message 1 of 3: Technical challenge
@@ -136,7 +134,7 @@ validator address.`
 > **3. Submit your evidence with the Discord bot**
 >
 > Once the node and application are ready, run `/submit-request` in
-> `#testnet-onboarding`. Provide only your validator address. The Gno team uses
+> `#testnet-onboarding`. Provide only your operator address. The Gno team uses
 > that address to review the validator and its Valoper application.
 
 ### Pinned message 2 of 3: Review
@@ -145,7 +143,7 @@ validator address.`
 >
 > **Review**
 >
-> Once `/submit-request` is complete, the Gno team uses the submitted validator
+> Once `/submit-request` is complete, the Gno team uses the submitted operator
 > address to review:
 >
 > - Connection to test13 and synchronization
@@ -171,13 +169,10 @@ validator address.`
 > private IP addresses, or other secrets. Validator addresses, validator public
 > keys, and public Valoper links are safe to share. Unsure? Ask before posting.
 
-Other messages link here as `[SECURITY PIN]`.
-
 ### Acknowledge a submission
 
-> Thanks, we received the validator address submitted with `/submit-request`.
-> The Gno team will review it against the published criteria and reply by
-> `[DATE OR TIMEFRAME]`.
+> Thanks, we received the operator address submitted with `/submit-request`.
+> The Gno team will review it against the published criteria and reply.
 
 ### Request missing information
 
@@ -186,8 +181,8 @@ Other messages link here as `[SECURITY PIN]`.
 > - `[MISSING OR INVALID ITEM]`
 > - `[MISSING OR INVALID ITEM]`
 >
-> After fixing it, run `/submit-request` again and provide only the validator
-> address. Security rules: `[SECURITY PIN]`
+> After fixing it, run `/submit-request` again and provide only the operator
+> address.
 
 ### Approve a candidate
 
@@ -210,7 +205,7 @@ Other messages link here as `[SECURITY PIN]`.
 >
 > To apply again, restart the process from the beginning: run
 > `/candidate-testnet` in `┋💬ㆍgeneral-chat`, complete every pinned onboarding
-> step, then run `/submit-request` with only the validator address. The new
+> step, then run `/submit-request` with only the operator address. The new
 > application will be reviewed independently.
 
 ### Escalate an unclear result to a technical call
