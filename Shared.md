@@ -72,7 +72,7 @@ operator address.`
 > in `#testnet-onboarding` and the Valopers realm.
 >
 > Thank you to everyone who has validated on the testnet so far. On
-> July 22, 2026, we will remove the `Testnet Validator` Discord
+> June 22, 2026, we will remove the `Testnet Validator` Discord
 > role. We remove it so every external validator is
 > onboarded through the same documented criteria, with one clear and fair path
 > into the validator set. This is an administrative reset, not a ban or a judgment
