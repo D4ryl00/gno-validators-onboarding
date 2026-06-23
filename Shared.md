@@ -115,10 +115,8 @@ operator address.`
 > `Testnet Validator` role was removed as part of the onboarding reset announced
 > here: `[ANNOUNCEMENT LINK]`.
 >
-> To apply for the new set, run `/candidate-testnet`
-> in `┋💬ㆍgeneral-chat`. The bot will assign the Candidate role and grant access
-> to `#testnet-onboarding`, where `/submit-request` accepts only your operator
-> address.
+> Please stay tuned for the new candidate announcement. It will explain how to
+> apply for the Test13 validator set through the new onboarding process.
 
 ## Candidate-facing Discord messages
 
