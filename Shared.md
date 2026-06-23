@@ -65,29 +65,42 @@ operator address.`
 
 ### Announcement before changing roles
 
+#### Part 1: Process announcement
+
 > **Update to the Testnet Validator Onboarding Process**
 >
-> Hi Validators,
+> Hi Gnomes,
 >
 > We are pleased to announce that we will be streamlining our validator
 > onboarding process. Before we accept new applications, we are introducing a
-> single, standardized onboarding path for all external Testnet validators. The
-> full requirements can be found in the pinned instructions in
-> `#testnet-onboarding` and the Valopers realm.
+> single, standardized onboarding path for all external Testnet validators. This
+> process applies both to people who already validated on previous testnets and
+> to new validator candidates joining for the first time.
 >
-> We appreciate everyone who has validated on our testnet. On June 22, 2026, we
-> will be removing the `Testnet Validator` Discord role from all current holders.
-> This is an administrative reset, not a ban or a reflection of your past
-> contributions. The goal is to ensure every external validator enters the set
-> through the same documented criteria, with one clear and fair path forward. To
-> get your role back, simply re-apply using the steps below.
+> Test11 is being sunset, and current validators who want to continue should go
+> through the same process as new validator candidates for Test13.
 >
-> **How to Re-Apply**
+> We appreciate everyone who has validated on our testnet. Before we open the new
+> flow, we will remove the `Testnet Validator` Discord role from current holders
+> on June 23, 2026. This is an administrative reset, not a ban or a reflection of
+> previous contributions. We are sharing this before making any role changes so
+> nobody is surprised.
+>
+> The goal is to give everyone the same documented path into the Test13 validator
+> set, with one clear and fair path forward.
+>
+#### Part 2: How to apply
+
+> **How to Apply for Test13**
+>
+> Anyone who wants to become a Test13 validator candidate, including previous
+> validators, can start from the same Discord flow.
 >
 > 1. In `┋💬ㆍgeneral-chat`, run `/candidate-testnet`.
-> 2. The bot will assign you the `Testnet Validator Candidate` role and grant
->    access to `#testnet-onboarding`.
-> 3. Read the pinned instructions and complete all required steps.
+> 2. The bot will assign the `Testnet Validator Candidate` role and grant access
+>    to `#testnet-onboarding`.
+> 3. Read the pinned instructions in `#testnet-onboarding` and complete all
+>    required steps from the Valopers realm.
 > 4. In `#testnet-onboarding`, run `/submit-request` and provide your operator
 >    address.
 > 5. The Gno team will review your submission and either assign you the
@@ -102,10 +115,8 @@ operator address.`
 > `Testnet Validator` role was removed as part of the onboarding reset announced
 > here: `[ANNOUNCEMENT LINK]`.
 >
-> To apply for the new set, run `/candidate-testnet`
-> in `┋💬ㆍgeneral-chat`. The bot will assign the Candidate role and grant access
-> to `#testnet-onboarding`, where `/submit-request` accepts only your operator
-> address.
+> Please stay tuned for the new candidate announcement. It will explain how to
+> apply for the Test13 validator set through the new onboarding process.
 
 ## Candidate-facing Discord messages
 
