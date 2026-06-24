@@ -140,8 +140,44 @@ operator address.`
 > **3. Submit your evidence with the Discord bot**
 >
 > Once the node and application are ready, run `/submit-request` in
-> `#testnet-onboarding`. Provide only your operator address. The Gno team uses
-> that address to review the validator and its Valoper application.
+> `#testnet-onboarding`. Provide your operator address and answer the
+> architecture and backup plan questions with concrete operational details. The
+> Gno team uses this information to review the validator and its Valoper
+> application.
+>
+> The points below are examples of useful information to provide, not a mandatory
+> checklist. You do not need to answer every point if it does not apply to your
+> setup.
+>
+> For your validator architecture, useful details include:
+>
+> - Validator topology: standalone validator, sentry-node architecture, public
+>   RPC/seed separation, remote signer, TMKMS, Horcrux, or another signer setup
+> - Redundancy and failover: backup validator, non-signing synced node, hot/warm
+>   standby, and whether failover is manual or automatic
+> - Hardware specs: CPU, RAM, storage type and size, bandwidth, OS, and whether
+>   the server is bare metal, cloud, VPS, or on-premise
+> - Hosting environment: provider, datacenter, geographic region, power/network
+>   redundancy, and whether infrastructure is spread across multiple locations
+> - Networking and security: firewalling, exposed ports, private validator
+>   connectivity, SSH access policy, DDoS protection, and access controls
+> - Monitoring and operations: tools used for uptime, sync height, peer count,
+>   missed blocks, disk usage, alert routing, and incident response
+>
+> For your backup plan, useful details include:
+>
+> - What is backed up: validator keys, critical configuration, snapshots, or
+>   deployment files
+> - How backups are protected: encryption, offline storage, multiple independent
+>   locations, NAS/off-site storage, or other key-management practices
+> - How recovery works: prepared replacement server, backup node, snapshots,
+>   restore runbook, expected recovery time, and who responds to alerts
+> - How double-signing is avoided: confirming the primary validator is fully
+>   stopped before activating a backup, and only signing after the replacement is
+>   caught up
+>
+> Do not post private keys, seed phrases, passwords, private IP addresses, or
+> other secrets. Describe your process without exposing the secret material.
 
 ### Pinned message 2 of 3: Review
 
