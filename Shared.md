@@ -120,64 +120,47 @@ operator address.`
 
 ### Pinned message 1 of 3: Technical challenge
 
-> **Testnet Validator Onboarding: test13 (1/3)**
->
-> Anyone can apply to be a test13 validator candidate.
->
-> **1. Set up your test13 node**
->
-> Follow the Test13 guide:
-> https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/VALIDATOR.md
->
-> **2. Complete your validator application**
->
-> Follow the current Valopers realm requirements:
-> https://test13.testnets.gno.land/r/gnops/valopers
->
-> For additional guidance on steps 1 and 2, see:
-> https://gnops.io/
->
-> **3. Submit your evidence with the Discord bot**
->
-> Once the node and application are ready, run `/submit-request` in
-> `#testnet-onboarding`. Provide your operator address and answer the
-> architecture and backup plan questions with concrete operational details. The
-> Gno team uses this information to review the validator and its Valoper
-> application.
->
-> The points below are examples of useful information to provide, not a mandatory
-> checklist. You do not need to answer every point if it does not apply to your
-> setup.
->
-> For your validator architecture, useful details include:
->
-> - Validator topology: standalone validator, sentry-node architecture, public
->   RPC/seed separation, remote signer, TMKMS, Horcrux, or another signer setup
-> - Redundancy and failover: backup validator, non-signing synced node, hot/warm
->   standby, and whether failover is manual or automatic
-> - Hardware specs: CPU, RAM, storage type and size, bandwidth, OS, and whether
->   the server is bare metal, cloud, VPS, or on-premise
-> - Hosting environment: provider, datacenter, geographic region, power/network
->   redundancy, and whether infrastructure is spread across multiple locations
-> - Networking and security: firewalling, exposed ports, private validator
->   connectivity, SSH access policy, DDoS protection, and access controls
-> - Monitoring and operations: tools used for uptime, sync height, peer count,
->   missed blocks, disk usage, alert routing, and incident response
->
-> For your backup plan, useful details include:
->
-> - What is backed up: validator keys, critical configuration, snapshots, or
->   deployment files
-> - How backups are protected: encryption, offline storage, multiple independent
->   locations, NAS/off-site storage, or other key-management practices
-> - How recovery works: prepared replacement server, backup node, snapshots,
->   restore runbook, expected recovery time, and who responds to alerts
-> - How double-signing is avoided: confirming the primary validator is fully
->   stopped before activating a backup, and only signing after the replacement is
->   caught up
->
-> Do not post private keys, seed phrases, passwords, private IP addresses, or
-> other secrets. Describe your process without exposing the secret material.
+# :pushpin:  **Testnet Validator Onboarding: test13 (1/3)**
+
+Anyone can apply to be a test13 validator candidate.
+
+## 1. Set up your test13 node
+
+Follow the Test13 guide: https://github.com/gnolang/gno/blob/chain/test13/misc/deployments/test13.gno.land/VALIDATOR.md
+
+## 2. Complete your validator application
+
+Follow the current Valopers realm requirements: https://test13.testnets.gno.land/r/gnops/valopers
+
+For additional guidance on steps 1 and 2, see: https://gnops.io/
+
+## 3. Submit your evidence with the Discord bot
+
+Once the node and application are ready, run `/submit-request` in #testnet-onboarding. Provide your operator address and answer the architecture and backup plan questions with concrete operational details. The Gno team uses this information to review the validator and its Valoper application.
+
+The points below are examples of useful information to provide, not a mandatory checklist.
+
+### Validator architecture
+
+Include relevant details such as:
+
+* Validator topology (standalone, sentry architecture, remote signer, TMKMS, Horcrux, etc.)
+* Redundancy and failover strategy
+* Hardware specifications and hosting environment
+* Geographic distribution and infrastructure provider(s)
+* Networking, security controls, and access policies
+* Monitoring, alerting, and operational procedures
+
+### Backup plan
+
+Include relevant details such as:
+
+* What is backed up (keys, configs, snapshots, deployment files)
+* How backups are protected and stored
+* Recovery process, recovery time, and responsible operators
+* Measures used to prevent double-signing during failover
+
+Do not post private keys, seed phrases, passwords, private IP addresses, or other secrets. Describe your process without exposing the secret material.
 
 ### Pinned message 2 of 3: Review
 
